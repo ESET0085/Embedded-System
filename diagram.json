@@ -1,0 +1,31 @@
+{
+  "version": 1,
+  "author": "Abhishek",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "wokwi-arduino-uno", "id": "uno", "top": 39, "left": 37.8, "attrs": {} },
+    { "type": "wokwi-lcd1602", "id": "lcd1", "top": -188.57, "left": 83.2, "attrs": {} },
+    {
+      "type": "wokwi-resistor",
+      "id": "r1",
+      "top": 13.55,
+      "left": 288,
+      "attrs": { "value": "220" }
+    }
+  ],
+  "connections": [
+    [ "r1:1", "lcd1:A", "green", [ "v-19.2", "h-134.3" ] ],
+    [ "r1:2", "uno:5V", "magenta", [ "v249.6", "h-149" ] ],
+    [ "lcd1:VSS", "uno:GND.1", "green", [ "v38.4", "h66.9" ] ],
+    [ "lcd1:RW", "uno:GND.1", "green", [ "v0" ] ],
+    [ "lcd1:K", "uno:GND.1", "green", [ "v67.2", "h-77.1" ] ],
+    [ "lcd1:VDD", "uno:3.3V", "yellow", [ "v76.8", "h91.9" ] ],
+    [ "lcd1:RS", "uno:12", "red", [ "v19.2", "h57.4" ] ],
+    [ "lcd1:E", "uno:11", "cyan", [ "v38.4", "h18.6" ] ],
+    [ "lcd1:D4", "uno:10", "limegreen", [ "v38.4", "h-19.9" ] ],
+    [ "lcd1:D5", "uno:9", "green", [ "v48", "h-19.9" ] ],
+    [ "lcd1:D6", "uno:8", "green", [ "v86.4", "h-19.4" ] ],
+    [ "lcd1:D7", "uno:7", "orange", [ "v86.4", "h-12.9" ] ]
+  ],
+  "dependencies": {}
+}
